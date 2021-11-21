@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="fontawesome-5.15.4/css/all.css" />
+  <link rel="shortcut icon" href="img/reshot-icon-market-prediction-SJ58GYDVAE.svg" type="image/x-icon" />
+  <title>Bearbrand</title>
+</head>
+
+<body>
+  <main>
+    <!-- Standard Nav -->
+    <nav class="navbar navbar-dark container-background fixed-top" id="_standardNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/reshot-icon-market-prediction-SJ58GYDVAE.svg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top filter-white" />
+          Bearbrand
+        </a>
+
+        <div class="navbar-expand navbar-nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_aboutUs">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_services">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Responsive Nav -->
+    <nav class=" navbar navbar-dark bg-dark bg-opacity-75 container-background fixed-top" id="_responsiveNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bearbrand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class=" navbar-nav me-auto mb-2 mb-lg-0 text-uppercase text-center fw-bold">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_aboutUs">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_services">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#_contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="_bodyContent">
+
+      <article id="_home" class="bienvenidos">
+        <div class="texto-bienvenida">
+          <div class="txt-box">
+            <h1 class="display-1 fw-bold">Bearbrand</h1>
+            <p class="fs-3 fw-light">Estilo para caballeros</p>
+            <a href="#_contact" class="btn">CONTACTO</a>
+          </div>
+        </div>
+      </article>
+
+      <article id="_aboutUs">
+        <h2 class="text-center h2 display-4 fw-bold">¿Quienes Somos?</h2>
+        <p class="text-break display-6 text-center p-size">
+          Somos una compañía dedicada a encontrar el estilo perfecto para
+          todos los caballeros fascinados con el estilo de los años 20's pero
+          con un toque de el siglo 21. Nuestra misión es darle un estilo único
+          a todos los caballeros que se encuentran en nuestra tienda, y así
+          lograr un balance entre lo clásico y lo moderno.
+        </p>
+
+        <div class="images-container">
+          <img src="./img/Dressing room-cuate.svg" alt="" class="rounded mx-auto d-block img-fluid addToCart" />
+          <img src="./img/Shopping-cuate.svg" alt="" class="rounded mx-auto d-block img-fluid addToCart pic-2" />
+        </div>
+      </article>
+
+      <article class="text-center _services" id="_services">
+        <div class="container text-xs-center products">
+          <p class="h3 mb-3">Productos</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <p class="h5">Accesorios</p>
+              <p>
+                Luce mejor acompañado de alguno de nuestros accesorios, como mochilas, maletas,
+                relojes, entre otras cosas.
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <i class="fas fa-shipping-fast"></i>
+              <p class="h5">Envío Gratis</p>
+              <p>
+                Compra algunos de nuestros paquetes estrella y recibe tu pedido en menos de 24 horas.
+                <b>¡Totalmente Gratis!</b>
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <i class="fas fa-tshirt"></i>
+              <p class="h5">Diseño personalizado</p>
+              <p>
+                Nuestros asesores de imagen buscarán la solución ideal para que tengas
+                un estilo único.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="_contact">
+        <h2 class="text-center h2 display-4 fw-bold">¡Contactanos!</h2>
+        <p class="text-break display-6 text-center p-size">
+          ¿Tienes algún evento en puerta? ¿Quieres cambiar tu estilo? Contactanos ahora
+          y te asesoraremos para que destaques con un estilo único.
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <img src="img/contact_pic.jpg" style="width:100%" class="rounded mx-auto d-block img-fluid contact-img">
+            </div>
+            <div class="column">
+              <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="mexico">México</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Dejanos un mensaje" style="height:16em"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#_responsiveNav {
+    display: none;
+}
+
+#_bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#_aboutUs, #_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+#_aboutUs h2, #_contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #fd7e14;
+}
+
+#_aboutUs p, #_contact p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+#_services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 87, 87);
+}
+
+/* logo Color */
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(172deg) brightness(105%) contrast(101%);
+}
+
+.bienvenidos, ._services {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bienvenidos {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/fondo-bienvenido-grande.jpg");
+}
+
+
+.container-background {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.texto-bienvenida {
+    display: grid;
+    place-items: center;
+}
+
+.txt-box {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    margin-top: 40vh;
+    font-size: 1em;
+}
+
+.txt-box p {
+    margin: -1rem 0 1rem 0;
+}
+
+.txt-box a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fd7e14;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.txt-box a:hover {
+    background-color: #fff;
+    color: #fd7e14;
+    font-weight: 700;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.addToCart {
+    width: 100%;
+    height: 35vh;
+}
+
+._services {
+    background-image: url("../img/store.jpg");
+    width: 100%;
+    height: auto;
+    color: rgb(255, 255, 255);
+}
+
+.products {
+    color: #fff;
+    font-weight: 200;
+}
+
+.products .h5 {
+    margin: 1em 0 1em 0;
+    font-weight: 700;
+}
+
+.fa, .fas {
+    color: #ff7300;
+    font-size: 3em;
+    margin: .7em 0 0 0;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ff7300;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #e99637;
+}
+
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+@media (min-width: 350px) and (max-width: 900px) {
+    ul {
+        width: 100%;
+        height: 100vh;
+        margin: 10rem 0;
+    }
+
+    li {
+        margin: -1em 0 2em 0;
+        padding: 2rem 0;
+    }
+
+    li:hover {
+        background-color: rgba(197, 197, 197, 0.096);
+    }
+
+    .bienvenidos, ._services, ._contact {
+        background-attachment: scroll;
+    }
+
+    .bienvenidos {
+        background: url("../img/fondo-bienvenidos.jpg") no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 101vh;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+    }
+
+    #_standardNav {
+        display: none;
+    }
+
+    #_responsiveNav {
+        display: block;
+    }
+
+    #_aboutUs {
+        width: 80%;
+    }
+
+    .pic-2 {
+        display: none !important;
+    }
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .contact-img {
+        display: none !important;
+    }
+
+}
